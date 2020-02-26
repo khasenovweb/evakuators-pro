@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+html(lang="en")
+head
+	meta(charset="UTF-8")
+	title Document
+	link(rel="stylesheet", href="css/main.css")
+body
+	.head
+		.container
+			a.head__logo(href="") Calc-1.ru
+	.calc
+		.container
+			.calc__content
+				h1.calc__title Кредитный калькулятор
+				.calc__form
+					.calc__input
+						input(name="summ" type="text" placeholder="Сумма кредита")
+						.calc__input__label руб.	
+					.calc__input
+						input(name="srok" type="number" placeholder="Срок кредита")
+						.calc__input__label лет	
+					.calc__input
+						input(name="percent" type="number" placeholder="Процентная ставка")
+						.calc__input__label % годовых	
+					button.btn(data-result-trigger) Расчитать
+				.calc__result
+					.calc__result__title Результат расчета
+					table.calc__result__table(border="1")
+						tr
+							td Ежемесячный платеж
+							td(data-result="platezh") 0 руб.
+						tr
+							td Переплата
+							td(data-result="pereplata") 0 руб.
+						tr
+							td Общая сумма долга
+							td(data-result="dolg") 0 руб.
+					.grafik
+						//canvas.myChart#myChart
+			.sidebar
+	block content
+	
+
+	script(src="https://code.jquery.com/jquery-3.4.1.min.js")
+	script(src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0")
+	script(src="js/mask.js")
+	script(src="js/main.js")
+	

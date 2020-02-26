@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en"></html>
+<head>
+  <meta charset="UTF-8"/>
+  <title>Document</title>
+  <link rel="stylesheet" href="css/main.css"/>
+</head>
+<body>
+  <div class="head">
+    <div class="container"><a href="" class="head__logo">Calc-1.ru</a></div>
+  </div>
+  <div class="calc">
+    <div class="container">
+      <div class="calc__content">
+        <h1 class="calc__title">Кредитный калькулятор</h1>
+        <div class="calc__form">
+          <div class="calc__input">
+            <input name="summ" type="text" placeholder="Сумма кредита"/>
+            <div class="calc__input__label">руб.	</div>
+          </div>
+          <div class="calc__input">
+            <input name="srok" type="number" placeholder="Срок кредита"/>
+            <div class="calc__input__label">лет	</div>
+          </div>
+          <div class="calc__input">
+            <input name="percent" type="number" placeholder="Процентная ставка"/>
+            <div class="calc__input__label">% годовых	</div>
+          </div>
+          <button data-result-trigger="data-result-trigger" class="btn">Расчитать</button>
+        </div>
+        <div class="calc__result">
+          <div class="calc__result__title">Результат расчета</div>
+          <table border="1" class="calc__result__table">
+            <tr>
+              <td>Ежемесячный платеж</td>
+              <td data-result="platezh">0 руб.</td>
+            </tr>
+            <tr>
+              <td>Переплата</td>
+              <td data-result="pereplata">0 руб.</td>
+            </tr>
+            <tr>
+              <td>Общая сумма долга</td>
+              <td data-result="dolg">0 руб.</td>
+            </tr>
+          </table>
+          <div class="grafik">
+            <!--canvas.myChart#myChart-->
+          </div>
+        </div>
+      </div>
+      <div class="sidebar"></div>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+  <script src="js/mask.js"></script>
+  <script src="js/main.js"></script>
+</body>
