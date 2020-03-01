@@ -1,0 +1,196 @@
+{% set title = 'Заказать эвакуатор в Москве' %}
+{% set description = 'Заказать эвакуатор в Москве | Лебедочный | Кран-манипулятор | Грузовой' %}
+{% set keywords = 'эвакуатор, эвакуатор москва, эвакуатор москва дешево, эвакуатор круглосуточно москва, эвакуатор круглосуточно москва' %}
+<!-- leb , kran , gruz -->
+{% set evaks = [
+    {
+        'name': 'Алексей',
+        'price': 'от 1500 руб.',
+        'phone': '+7 (906) 799-53-51',
+        'type': 'leb'
+    },
+    {
+        'name': 'Дмитрий',
+        'price': 'от 2500 руб.',
+        'phone': '+7 (926) 067-3516',
+        'type': 'leb'
+    },
+    {
+        'name': 'Николай',
+        'price': 'договорная',
+        'phone': '+7 (925) 768-7441',
+        'type': 'gruz'
+    },
+    {
+        'name': 'Руслан',
+        'price': 'договорная',
+        'phone': '+7 (926) 040-2210',
+        'type': 'leb'
+    },
+    {
+        'name': 'Виолета',
+        'price': 'договорная',
+        'phone': '+7 (926) 345-5618',
+        'type': 'gruz'
+    },
+    {
+        'name': 'Рафик',
+        'price': 'от 2500 руб.',
+        'phone': '+7 (964) 525-5570',
+        'type': 'leb'
+    },
+    {
+        'name': 'Алексей',
+        'price': 'от 2500 руб.',
+        'phone': '+7 (985) 253-5333',
+        'type': 'gruz'
+    },
+    {
+        'name': 'Амин',
+        'price': 'от 2500 руб.',
+        'phone': '+7 (903) 747-1021',
+        'type': 'leb'
+    },
+    {
+        'name': 'Джулета',
+        'price': 'от 990 руб.',
+        'phone': '+7 (965) 191-9555',
+        'type': 'gruz'
+    },
+    {
+        'name': 'Евгений',
+        'price': 'договорная',
+        'phone': '+7 (929) 521-2995',
+        'type': 'gruz'
+    },
+    {
+        'name': 'Игорь',
+        'price': 'договорная',
+        'phone': '+7 (995) 300-1011',
+        'type': 'leb'
+    },
+    {
+        'name': 'Ваган',
+        'price': 'от 2300 руб.',
+        'phone': '+7 (916) 060-0006',
+        'type': 'leb'
+    },
+    {
+        'name': 'Алексей',
+        'price': 'от 10000 руб.',
+        'phone': '+7 (926) 320-1337',
+        'type': 'gruz'
+    },
+    {
+        'name': 'Григорий',
+        'price': 'договорная',
+        'phone': '+7 (926) 658-3733',
+        'type': 'leb'
+    },
+    {
+        'name': 'Артур',
+        'price': 'от 1500 руб.',
+        'phone': '+7 (926) 317-4794',
+        'type': 'leb'
+    },
+    {
+        'name': 'Виталий',
+        'price': 'договорная',
+        'phone': '+7 (915) 400-2100',
+        'type': 'leb'
+    },
+    {
+        'name': 'Юрий',
+        'price': 'договорная',
+        'phone': '+7 (985) 716-0191',
+        'type': 'gruz'
+    },
+    {
+        'name': 'Севак',
+        'price': 'от 1500 руб.',
+        'phone': '+7 (933) 000-1900',
+        'type': 'leb'
+    },
+    {
+        'name': 'Владислав',
+        'price': 'договорная',
+        'phone': '+7 (902) 060-7171',
+        'type': 'leb'
+    },
+    {
+        'name': 'Сергей',
+        'price': 'от 500 руб.',
+        'phone': '+7 (985) 917-8275',
+        'type': 'kran'
+    },
+    {
+        'name': 'Андрей',
+        'price': 'договорная',
+        'phone': '+7 (925) 518-4388',
+        'type': 'kran'
+    },
+    {
+        'name': 'Петр',
+        'price': 'от 900 руб.',
+        'phone': '+7 (916) 990-1802',
+        'type': 'kran'
+    },
+    {
+        'name': 'Сергей',
+        'price': 'договорная',
+        'phone': '+7 (977) 883-0945',
+        'type': 'kran'
+    }
+] %}
+
+{% extends 'layouts/_main.html' %}
+
+{% block content %}
+<!-- page__title -->
+<div class="page__title">
+    <div class="container">
+        <h1>Заказать эвакуатор в Москве</h1>
+        <p>На нашем сайте вы сможете заказать эвакуатор для вашего автомобиля дешево в Москве.</p>
+    </div>
+</div>
+<!--END page__title -->
+
+<!-- nav -->
+<div class="nav">
+    <div class="container">
+        <div class="nav__links__wrapper">
+            <ul class="nav__links">
+                <li ><a class="active" data-type="all" href="/">Все</a></li>
+                <li><a data-type="leb" href="/">Лебедочный</a></li>
+                <li><a data-type="kran" href="/">Кран-манипулятор</a></li>
+                <li><a data-type="gruz" href="/">Грузовой</a></li>
+            </ul>   
+        </div>
+    </div>
+</div>
+<!--END nav -->
+
+<!-- items -->
+<div class="items">
+    {% for evak in evaks %}
+    <!-- item -->
+    <div class="item" data-type="{{ evak.type }}">
+        <div class="item__img">
+            <img src="img/evak/{{ evak.phone }}.jpg" alt="">
+        </div>
+        <div class="item__info">
+            <div class="item__name">{{ evak.name }}</div>
+            <div class="item__price">{{ evak.price }}</div>
+            <a href="tel:{{ evak.phone }}" class="item__phone">{{ evak.phone }}</a>
+        </div>
+        <a href="tel:{{ evak.phone }}" class="item__call">
+            <img src="img/item__call.svg" alt="">
+        </a>
+    </div>
+    <!--END item -->
+    {% endfor %}
+</div>
+<!--END items -->
+
+
+{% endblock %}

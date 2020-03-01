@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+	<meta name="description" content="{{ description }}">
+	<meta name="keywords" content="{{ keywords }}">
+	<meta property="og:title" content="{{ title }}" />
+	<meta property="og:url" content="https://evakuators-pro.ru" />
+	<meta property="og:description" content="{{ description }}" />
+	<meta property="og:image" content="img/og.jpg">
+	<title>{{ title }}</title>
+	<link rel="stylesheet" href="css/jquery.fancybox.min.css">
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/media.css">
+</head>
+<body>
+	<!-- head -->
+	<div class="head">
+		<div class="container">
+			<a href="" class="head__logo">Evakuators <span>pro</span></a>
+			<div class="head__city">Санкт-Петербург <img src="img/head__city.svg" alt=""></div>
+		</div>
+	</div>
+	<!--END head -->
+	{% block content %}
+		
+	{% endblock %}
+	
+	<!-- footer -->
+	<div class="footer">
+		<div class="container">
+			<div class="footer__copyright">Copyright © EVAKUATORS PRO 2020</div>
+		</div>
+	</div>
+	<!--END footer -->
+	<script src="js/jquery.js"></script>
+	<script src="js/jquery.fancybox.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>
+
+

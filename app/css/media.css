@@ -1,0 +1,23 @@
+@media screen and (max-width: 400px) {
+  * {
+    font-size: 12px;
+  }
+  .head__logo {
+    font-size: 12px;
+  }
+  .head__logo span {
+    font-size: 12px;
+  }
+  .head__city {
+    font-size: 11px;
+  }
+  .item__phone {
+    font-size: 14px;
+  }
+  .item__name {
+    font-size: 14px;
+  }
+  .item__call {
+    width: 60px;
+  }
+}

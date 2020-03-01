@@ -1,0 +1,295 @@
+@font-face {
+  font-family: 'Nunito';
+  font-style: italic;
+  font-weight: 200;
+  font-display: swap;
+  src: local('Nunito ExtraLight Italic'), local('Nunito-ExtraLightItalic'), url(https://fonts.gstatic.com/s/nunito/v12/XRXQ3I6Li01BKofIMN5MZ9vOUTo.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Nunito';
+  font-style: italic;
+  font-weight: 300;
+  font-display: swap;
+  src: local('Nunito Light Italic'), local('Nunito-LightItalic'), url(https://fonts.gstatic.com/s/nunito/v12/XRXQ3I6Li01BKofIMN4oZNvOUTo.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Nunito';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Nunito Italic'), local('Nunito-Italic'), url(https://fonts.gstatic.com/s/nunito/v12/XRXX3I6Li01BKofIMNaHRss.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Nunito';
+  font-style: italic;
+  font-weight: 600;
+  font-display: swap;
+  src: local('Nunito SemiBold Italic'), local('Nunito-SemiBoldItalic'), url(https://fonts.gstatic.com/s/nunito/v12/XRXQ3I6Li01BKofIMN5cYtvOUTo.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Nunito';
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+  src: local('Nunito Bold Italic'), local('Nunito-BoldItalic'), url(https://fonts.gstatic.com/s/nunito/v12/XRXQ3I6Li01BKofIMN44Y9vOUTo.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Nunito';
+  font-style: italic;
+  font-weight: 800;
+  font-display: swap;
+  src: local('Nunito ExtraBold Italic'), local('Nunito-ExtraBoldItalic'), url(https://fonts.gstatic.com/s/nunito/v12/XRXQ3I6Li01BKofIMN4kYNvOUTo.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Nunito';
+  font-style: italic;
+  font-weight: 900;
+  font-display: swap;
+  src: local('Nunito Black Italic'), local('Nunito-BlackItalic'), url(https://fonts.gstatic.com/s/nunito/v12/XRXQ3I6Li01BKofIMN4AYdvOUTo.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 200;
+  font-display: swap;
+  src: local('Nunito ExtraLight'), local('Nunito-ExtraLight'), url(https://fonts.gstatic.com/s/nunito/v12/XRXW3I6Li01BKofA-seUZevN.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: local('Nunito Light'), local('Nunito-Light'), url(https://fonts.gstatic.com/s/nunito/v12/XRXW3I6Li01BKofAnsSUZevN.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Nunito Regular'), local('Nunito-Regular'), url(https://fonts.gstatic.com/s/nunito/v12/XRXV3I6Li01BKofIMeaE.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: local('Nunito SemiBold'), local('Nunito-SemiBold'), url(https://fonts.gstatic.com/s/nunito/v12/XRXW3I6Li01BKofA6sKUZevN.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local('Nunito Bold'), local('Nunito-Bold'), url(https://fonts.gstatic.com/s/nunito/v12/XRXW3I6Li01BKofAjsOUZevN.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: local('Nunito ExtraBold'), local('Nunito-ExtraBold'), url(https://fonts.gstatic.com/s/nunito/v12/XRXW3I6Li01BKofAksCUZevN.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: local('Nunito Black'), local('Nunito-Black'), url(https://fonts.gstatic.com/s/nunito/v12/XRXW3I6Li01BKofAtsGUZevN.ttf) format('truetype');
+}
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Nunito';
+  font-size: 14px;
+  color: #333333;
+  list-style-type: none;
+  font-weight: 400;
+}
+body {
+  background: #F6F6F6;
+  padding-bottom: 25px;
+}
+a {
+  text-decoration: none;
+  color: #0098D0;
+}
+.container {
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.head {
+  background-color: #fff;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.06);
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+.head .container {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
+}
+.head__logo {
+  text-transform: uppercase;
+  color: #333333;
+  font-weight: 900;
+  font-size: 16px;
+}
+.head__logo span {
+  color: #FF8300;
+  font-size: 16px;
+  font-weight: 900;
+}
+.head__city {
+  background-color: #FF8300;
+  color: white;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+          align-items: center;
+  padding: 15px 25px;
+  padding-right: 20px;
+  font-size: 14px;
+  font-weight: 600;
+  margin-right: -20px;
+  cursor: pointer;
+}
+.head__city img {
+  margin-left: 15px;
+  width: 10px;
+  margin-bottom: -3px;
+}
+.page__title {
+  margin-top: 20px;
+}
+.page__title h1 {
+  font-size: 18px;
+}
+.page__title p {
+  opacity: 0.5;
+  font-size: 11px;
+  margin-top: 10px;
+}
+.nav__links__wrapper {
+  overflow-x: auto;
+  margin: 0 -20px;
+  padding: 0 20px;
+}
+.nav {
+  margin-top: 20px;
+}
+.nav__links {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+          align-items: center;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+.nav__links li {
+  margin-right: 10px;
+}
+.nav__links li a {
+  border-radius: 100px;
+  border: 1px solid #0098D0;
+  display: block;
+  padding: 10px 15px;
+  font-weight: 600;
+}
+.nav__links .active {
+  background-color: #0098D0;
+  color: white;
+}
+.items {
+  margin-top: 25px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 1px;
+}
+.item {
+  background-color: #fff;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+          align-items: center;
+}
+.item__img {
+  line-height: 0;
+}
+.item__company .item__img {
+  position: relative;
+}
+.item__company .item__img:before {
+  content: 'Компания';
+  display: block;
+  width: 100%;
+  background-color: #FFC700;
+  text-align: center;
+  font-size: 10px;
+  color: white;
+  font-weight: 600;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  background-position: center;
+  background-size: cover;
+}
+.item__info {
+  margin-left: 20px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 5px;
+}
+.item__name {
+  font-weight: 700;
+  color: #FF8300;
+  font-size: 16px;
+}
+.item__price {
+  font-weight: 500;
+}
+.item__phone {
+  font-size: 16px;
+  font-weight: 600;
+}
+.item__call {
+  width: 75px;
+  height: 100px;
+  background-color: #0098D0;
+  margin-left: auto;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+          justify-content: center;
+}
+.addevak {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #FF8300;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+}
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #b3b3b3;
+  padding: 5px 0;
+}
+.footer__copyright {
+  text-align: center;
+  font-size: 11px;
+  color: white;
+}

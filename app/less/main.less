@@ -1,0 +1,197 @@
+//@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&display=swap&subset=cyrillic');
+//@import url('https://fonts.googleapis.com/css?family=Ubuntu:300,300i,400,400i,500,500i,700,700i&display=swap&subset=cyrillic');
+@import url('https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i&display=swap&subset=cyrillic');
+@blue: #0098D0;
+@orange: #FF8300;
+@yellow: #FFC700;
+@black: #333333;
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'Nunito', ;
+	font-size: 14px;
+	color: @black;
+	list-style-type: none;
+	font-weight: 400;
+}
+body {
+	background: #F6F6F6;
+	padding-bottom: 25px;
+}
+a {
+	text-decoration: none;
+	color: @blue;
+}
+.container {
+	//max-width: 414px;
+	margin: 0 auto;
+	padding: 0 20px;
+}
+.head {
+	background-color: #fff;
+	box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.06);
+	position: sticky;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	.container {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+}
+.head__logo {
+	text-transform: uppercase;
+	color: @black;
+	font-weight: 900;
+	font-size: 16px;
+	span {
+		color: @orange;
+		font-size: 16px;
+		font-weight: 900;
+	}
+}
+.head__city {
+	background-color: @orange;
+	color: white;
+	display: flex;
+	align-items: center;
+	padding: 15px 25px;
+	padding-right: 20px;
+	font-size: 14px;
+	font-weight: 600;
+	margin-right: -20px;
+	cursor: pointer;
+	img {
+		margin-left: 15px;
+		width: 10px;
+		margin-bottom: -3px;
+	}
+}
+.page__title {
+	margin-top: 20px;
+	h1 {
+		font-size: 18px;
+	}
+	p {
+		opacity: 0.5;
+		font-size: 11px;
+		margin-top: 10px;
+	}
+}
+.nav__links__wrapper {
+	overflow-x: auto;
+	margin: 0 -20px;
+	padding: 0 20px;
+}
+.nav {
+	margin-top: 20px;
+}
+.nav__links {
+	display: flex;
+	align-items: center;
+	width: max-content;
+	li {
+		margin-right: 10px;
+		a {
+			border-radius: 100px;
+			border: 1px solid @blue;
+			display: block;
+			padding: 10px 15px;
+			font-weight: 600;
+		}
+	}
+	.active {
+		background-color: @blue;
+		color: white;
+	}
+}
+.items {
+	margin-top: 25px;
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-gap: 1px;
+}
+.item {
+	background-color: #fff;
+	display: flex;
+	align-items: center;
+}
+.item__img {
+	// width: 100px;
+	// height: 100px;
+	// background-image: url(../img/item__bg.jpg);
+	// background-repeat: no-repeat;
+	line-height: 0;
+	
+}
+.item__company {
+	.item__img {
+		position: relative;
+		&:before {
+			content: 'Компания';
+			display: block;
+			width: 100%;
+			background-color: @yellow;
+			text-align: center;
+			font-size: 10px;
+			color: white;
+			font-weight: 600;
+			bottom: 0;
+			left: 0;
+			position: absolute;
+			background-position: center;
+			background-size: cover;
+		}
+	}
+}
+.item__info {
+	margin-left: 20px;
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-gap: 5px;
+}
+.item__name {
+	font-weight: 700;
+	color: @orange;
+	font-size: 16px;
+}
+.item__price {
+	font-weight: 500;
+}
+.item__phone {
+	font-size: 16px;
+	font-weight: 600;
+}
+.item__call {
+	width: 75px;
+	height: 100px;
+	background-color: @blue;
+	margin-left: auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.addevak {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	background-color: @orange;
+	color: white;
+	text-align: center;
+	padding: 15px 0;
+}
+.footer {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	background-color: lighten(@black, 50%);
+	padding: 5px 0;
+}
+.footer__copyright {
+	text-align: center;
+	font-size: 11px;
+	color: white;
+}
