@@ -4,12 +4,14 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width">
 	<meta name="description" content="{{ description }}">
-	<meta name="keywords" content="{{ keywords }}">
 	<meta property="og:title" content="{{ title }}" />
 	<meta property="og:url" content="https://evakuators-pro.ru" />
 	<meta property="og:description" content="{{ description }}" />
 	<meta property="og:image" content="img/og.jpg">
+	<meta name="yandex-verification" content="a86c1766a4c6e4b4" />
+	<meta name="google-site-verification" content="o-iy1ClXFeFNRCmQnDI0lCgYCLq-T_bnfN66NAwUE9I" />
 	<title>{{ title }}</title>
+	<link rel="shortcut icon" type="image/png" href="img/favicon.png">
 	<link rel="stylesheet" href="css/jquery.fancybox.min.css">
 	<link rel="stylesheet" href="css/owl.carousel.min.css">
 	<link rel="stylesheet" href="css/main.css">
@@ -20,10 +22,20 @@
 	<div class="head">
 		<div class="container">
 			<a href="" class="head__logo">Evakuators <span>pro</span></a>
-			<div class="head__city">Санкт-Петербург <img src="img/head__city.svg" alt=""></div>
+			<div data-click="selectcity" class="head__city">{{ city }} <img src="img/head__city.svg" alt=""></div>
 		</div>
 	</div>
 	<!--END head -->
+	<!-- selectcity -->
+	<div data-modal="selectcity" class="selectcity__wrapper">
+		<div class="selectcity">
+			<ul>
+				<li><a href="/">Москва</a></li>
+				<li><a href="spb.html">Санкт-Петербург</a></li>
+			</ul>
+		</div>
+	</div>
+	<!-- selectcity -->
 	{% block content %}
 		
 	{% endblock %}

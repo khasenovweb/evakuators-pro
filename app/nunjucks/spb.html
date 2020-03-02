@@ -1,0 +1,64 @@
+{% set city = 'Санкт-Петербург' %}
+{% set title = 'Эвакуатор в СПБ дешево' %}
+{% set description = 'Заказать эвакуатор в СПБ дешево и круглосуточно | Лебедочный | Кран-манипулятор | Грузовой' %}
+<!-- leb , kran , gruz -->
+{% set evaks = [
+    {
+        'name': 'Алексей',
+        'price': 'от 1500 руб.',
+        'phone': '+7 (906) 799-53-51',
+        'type': 'leb'
+    }
+] %}
+
+{% extends 'layouts/_main.html' %}
+
+{% block content %}
+<!-- page__title -->
+<div class="page__title">
+    <div class="container">
+        <h1>Заказать эвакуатор в СПБ</h1>
+        <p>На нашем сайте вы сможете заказать эвакуатор для вашего автомобиля дешево в СПБ.</p>
+    </div>
+</div>
+<!--END page__title -->
+
+<!-- nav -->
+<div class="nav">
+    <div class="container">
+        <div class="nav__links__wrapper">
+            <ul class="nav__links">
+                <li ><a class="active" data-type="all" href="/">Все</a></li>
+                <li><a data-type="leb" href="/">Лебедочный</a></li>
+                <li><a data-type="kran" href="/">Кран-манипулятор</a></li>
+                <li><a data-type="gruz" href="/">Грузовой</a></li>
+            </ul>   
+        </div>
+    </div>
+</div>
+<!--END nav -->
+
+<!-- items -->
+<div class="items">
+    {% for evak in evaks %}
+    <!-- item -->
+    <div class="item" data-type="{{ evak.type }}">
+        <div class="item__img">
+            <img alert="{{ title }}" title="{{ title }}" src="img/evak/{{ evak.phone }}.jpg" alt="">
+        </div>
+        <div class="item__info">
+            <div class="item__name">{{ evak.name }}</div>
+            <div class="item__price">{{ evak.price }}</div>
+            <a href="tel:{{ evak.phone }}" class="item__phone">{{ evak.phone }}</a>
+        </div>
+        <a href="tel:{{ evak.phone }}" class="item__call">
+            <img src="img/item__call.svg" alt="">
+        </a>
+    </div>
+    <!--END item -->
+    {% endfor %}
+</div>
+<!--END items -->
+
+
+{% endblock %}

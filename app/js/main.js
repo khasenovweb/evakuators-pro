@@ -11,5 +11,8 @@
  		}
  		$('.nav__links a').removeClass('active');
  		$(this).addClass('active');
- 	});
+	 });
+	 $('[data-click="selectcity"]').click(function(){
+		$('[data-modal="selectcity"]').show();
+	 });
  });

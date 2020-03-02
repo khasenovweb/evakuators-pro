@@ -1,6 +1,6 @@
-{% set title = 'Заказать эвакуатор в Москве' %}
-{% set description = 'Заказать эвакуатор в Москве | Лебедочный | Кран-манипулятор | Грузовой' %}
-{% set keywords = 'эвакуатор, эвакуатор москва, эвакуатор москва дешево, эвакуатор круглосуточно москва, эвакуатор круглосуточно москва' %}
+{% set city = 'Москва' %}
+{% set title = 'Эвакуатор Москва' %}
+{% set description = 'Эвакуатор москва дешево | круглосуточно | недорого ' %}
 <!-- leb , kran , gruz -->
 {% set evaks = [
     {
@@ -149,7 +149,7 @@
 <!-- page__title -->
 <div class="page__title">
     <div class="container">
-        <h1>Заказать эвакуатор в Москве</h1>
+        <h1>Эвакуатор Москва</h1>
         <p>На нашем сайте вы сможете заказать эвакуатор для вашего автомобиля дешево в Москве.</p>
     </div>
 </div>
@@ -176,7 +176,7 @@
     <!-- item -->
     <div class="item" data-type="{{ evak.type }}">
         <div class="item__img">
-            <img src="img/evak/{{ evak.phone }}.jpg" alt="">
+            <img alert="{{ title }}" title="{{ title }}" src="img/evak/{{ evak.phone }}.jpg" alt="">
         </div>
         <div class="item__info">
             <div class="item__name">{{ evak.name }}</div>
